@@ -1,0 +1,35 @@
+INSERT INTO DOCTOR (
+    DOC_ID,
+    DOC_NAME,
+    DOC_ADDRESS,
+    DOC_PHONE
+)
+VALUES
+    (
+        '1',
+        'Manav Gupta',
+        'Bangalore',
+        '9745123541'
+    ),
+    (
+        '2',
+        'Ranjit Kumar',
+        'Mysore',
+        '9475134523'
+    ),
+    (
+        '3',
+        'Arun Gowda',
+        'Mandya',
+        '9475124562'
+    );
+
+INSERT INTO OWNER(
+    OWNER_ID,
+    PASSWORD)
+VALUES ( '1000','ROOT')
+
+INSERT INTO EMPLOYEE(
+    EMP_ID,
+    F_NAME)
+VALUES ( '2000','TOOR')

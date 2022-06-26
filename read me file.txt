@@ -1,0 +1,11 @@
+1.Download zip file 
+2.Extract  the file and copy chandan_dbms flask
+3.Run the db_init and exec python file in spyder
+4.Run script http://localhost/login(frontend)
+
+loogin details 
+Login details for :OWNER  user id :1111
+                          password:owner
+                   for other login see the file :(dg_doctor_query_exec) 
+
+

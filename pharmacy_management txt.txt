@@ -1,0 +1,26 @@
+cd C:\Users\ASUS\OneDrive\Desktop\chandan_dbms
+
+
+insert into owner values(1111,'owner');
+insert into drug values(1,'crocin','ravi','apoll','mild fever','skinrashes'),
+		  (2,'cipla','jayanth','cipla pvt','cold','tiredness'),
+                   (3,'rantac','sanjay','jb chemical and pvt','cold','tiredness'),
+                   (4,'zincovit','vikas','apex lab and pvt','immunity','vomiting'),
+                   (5,'zerodol-t','vinay','ipca lab pvt','pauin killer','gastric'),
+                   (11,'tuspel plus','darshan','indico remedies pvt','cough','stomach  pain'),
+                   (12,'citralak','prajwal','pfizer ltd','kidney stone',' stomach pain'),
+                   (13,'cremafin','pavan','abbott','constipation','diarrhea'),
+                    (14,'himilayaliv.52','kumar','himalaya drug company','liver pain killer','rectal bleeding'),
+                   (15,'apetamin','kumar','tabletes india ltd','allergic','dizziness');
+
+
+
+
+
+insert into employee values('kumar','a',1000,'kumar@gmail.com',9857464586,'1966-10-02'),
+                                         ('vijay','b',2000,'vijay@gmail.com',956845858,'1994-12-28');
+
+insert into requirement values(1 ,'crocin',100,5,'ravi','apoll'),
+( 15,'apetamin',200,10,'kumar','tablets india ltd '),
+(14,'himalayaliv.52',200,160,'kumar','himalaya drug company'),
+(13,'cremafin',100,250,'pavan','abbott');

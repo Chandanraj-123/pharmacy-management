@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="follow,index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>  Login Page</title>
+
+
+	<style>
+	html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #241c15;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  background-position:center;
+  }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: #006570;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #004e56;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+.form-wrapper {
+  width: 448px;
+  background-color: #fff;
+  padding: 48px 40px 36px;
+  margin: 0 auto;
+}
+
+
+
+
+.text-title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.field-group {
+  margin: 5px 0;
+
+}
+
+.input {
+  padding: 0.5em 0 0.5em 1em;
+  width: 100%;
+  border: 1px solid rgba(36, 28, 21, 0.3);
+  border-radius: 2px;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #007c89;
+  box-shadow: inset 0 0 0 1px #007c89;
+}
+
+.label-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+
+
+
+.label--right {
+  cursor: pointer;
+  color: #007c89;
+}
+
+.label--right svg {
+  margin-right: 0.5em;
+}
+
+.is--hide {
+  display: none;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 2em;
+  margin: 0 auto;
+  width: 180px;
+
+  /* hardcoded value */
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid rgba(36, 28, 21, 0.3);
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-label:hover input ~ .checkbox-checkmark {
+  border: 2px solid #007c89;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkbox-checkmark {
+  background-color: #007c89;
+  border: 2px solid #007c89;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkbox-checkmark::after {
+  left: 7px;
+  top: 2px;
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkbox-checkmark::after {
+  display: block;
+}
+
+.btn-submit {
+  background-color: #006570;
+  color: #fff;
+  padding: 0.7em;
+  border-radius: 2px;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.content-right-text span {
+  font-size: 1.1rem;
+}
+
+.link-custom-domain {
+  background: transparent;
+  opacity: 0.7;
+  transition: opacity 0.15s linear;
+  font-weight: bold;
+  border: 2px solid #241c15;
+  margin: 12px;
+  border-radius: 2px;
+  padding: 0 18px;
+  line-height: 34px;
+  display: inline-block;
+  text-decoration: none;
+  color: #241c15;
+}
+
+.link-custom-domain:hover {
+  color: #241c15;
+  opacity: 1;
+}
+.logo{
+  text-align: center;
+}
+
+</style>
+  </head>
+
+  <body>
+    
+       
+       
+      <div class="html">
+      <img src="login image2.jpg" width="400 " height="400">
+    <div class ="logo">
+      <img src="logo1.jpg" width="200" height="150" alt="mypic"/>
+    
+    <div class="content">
+      <div class="content-left">
+        <div class="form-wrapper">
+            <h1 class="text-title">Log In</h1>
+         
+          <form  action="/" method="post">
+
+          <div class="field-group">
+            <label class="label" for="txt-email">Username</label>
+            <input class = "input" id="username" name="username" required="required" type="text" placeholder="ID" >
+          </div>
+          <div class="field-group">
+            <div class="label-wrapper">
+              <label class="label" for="txt-password">Password</label>
+              <label class="label label--right" onclick="tooglePassword()">
+                <svg
+                  class="label-icon eye is--show"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-eye"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <svg
+                  class="label-icon eye-off is--hide"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-eye-off"
+                >
+                  <path
+                    d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"
+                  ></path>
+                  <line x1="1" y1="1" x2="23" y2="23"></line>
+                </svg>
+                <span class="label-text">Show</span>
+              </label>
+            </div>
+            
+            <input class = "input" id="password" name="password" required="required" type="password" placeholder="Password" />
+          </div>
+
+          <div class="field-group">
+            <input class="btn-submit" type="submit" value="Log In" />
+          </div>
+          </form>
+
+
+          
+        </div>
+      </div>
+      
+    </div>
+      </div>
+      </div>
+       
+    </body>
+</html>
